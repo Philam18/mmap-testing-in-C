@@ -1,13 +1,3 @@
-#include <stdlib.h>
-#include <stdint.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/mman.h>
-#include <string.h>
-#include <stdio.h>
-
 /**
 This program copies an arbitrary sized file into stdout and output.txt.
 
@@ -28,6 +18,16 @@ To run:
 	-run:		./a.out input.txt output.txt
 
 **/
+
+#include <stdlib.h>
+#include <stdint.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <string.h>
+#include <stdio.h>
 
 int main(int argc, char *argv[]){
 	//ERROR: did not provide a file
